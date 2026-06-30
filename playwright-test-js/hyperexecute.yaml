@@ -5,18 +5,17 @@ runson: linux
 autosplit: true
 concurrency: 1
 
-vars:
-  executeOn: lambdatest
-
 pre:
   - npm install
+  - npx playwright install
 
 testDiscovery:
   type: raw
   mode: dynamic
   command: find tests -name "*.spec.js"
 
-testRunnerCommand: npx playwright $test
+testRunnerCommand: "npx playwright test --config=playwright.config.js $test"
+
 retryOnFailure: true
 maxRetries: 3
 
