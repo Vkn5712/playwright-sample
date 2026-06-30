@@ -5,6 +5,9 @@ runson: linux
 autosplit: true
 concurrency: 1
 
+vars:
+  executeOn: lambdatest
+
 pre:
   - npm install
 
@@ -13,8 +16,7 @@ testDiscovery:
   mode: dynamic
   command: find tests -name "*.spec.js"
 
-testRunnerCommand: npx playwright test $test
-
+testRunnerCommand: npx playwright $test
 retryOnFailure: true
 maxRetries: 3
 
