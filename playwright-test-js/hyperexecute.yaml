@@ -14,8 +14,7 @@ testDiscovery:
   mode: dynamic
   command: find tests -name "*.spec.js"
 
-testRunnerCommand: "npx playwright test --config=playwright.config.js $test"
-
+testRunnerCommand: npm test -- --config=playwright.config.js $test
 retryOnFailure: true
 maxRetries: 3
 
