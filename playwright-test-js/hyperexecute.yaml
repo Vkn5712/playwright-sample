@@ -1,0 +1,22 @@
+version: "0.1"
+
+runson: linux
+
+autosplit: true
+concurrency: 1
+
+pre:
+  - npm install
+
+testDiscovery:
+  type: raw
+  mode: dynamic
+  command: find tests -name "*.spec.js"
+
+testRunnerCommand: npx playwright test $test
+
+retryOnFailure: true
+maxRetries: 3
+
+post:
+  - rm -f demo.txt
