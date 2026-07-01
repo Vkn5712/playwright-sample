@@ -8,7 +8,15 @@ const { chromium, _android } = require('playwright')
 const cp = require('child_process');
 const playwrightClientVersion = cp.execSync('npx playwright --version').toString().trim().split(' ')[1];
 
-if (process.env.executeOn !== "local"){
+const isLocalRun = process.env.executeOn === 'local'
+const ltUsername = process.env.LT_USERNAME || 'vishnuknair'
+const ltAccessKey = process.env.LT_ACCESS_KEY || 'LT_mu5SYdU4hWfecLZm7vn5zOWOV7WW720LcdOnV9Eknq3ctYj'
+
+if (!isLocalRun && (!ltUsername || !ltAccessKey)) {
+  throw new Error('LT_USERNAME and LT_ACCESS_KEY must be set before running LambdaTest projects.')
+}
+
+if (!isLocalRun){
 
 // LambdaTest capabilities
 const capabilities = {
@@ -18,8 +26,8 @@ const capabilities = {
     'platform': 'Windows 10',
     'build': 'Playwright JS Build',
     'name': 'Playwright Test',
-    'user': process.env.LT_USERNAME,
-    'accessKey': process.env.LT_ACCESS_KEY,
+    'user': ltUsername,
+    'accessKey': ltAccessKey,
     'network': true,
     'video': true,
     'console': true,
