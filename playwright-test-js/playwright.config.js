@@ -15,6 +15,18 @@ const config = {
       use: {
         viewport: { width: 1280, height: 720 }
       }
+    },
+    {
+      name: 'Chrome:latest:MacOS Ventura@lambdatest',
+      use: {
+        viewport: { width: 1920, height: 1080 }
+      }
+    },
+    {
+      name: 'MicrosoftEdge:109:Windows 11@lambdatest',
+      use: {
+        viewport: { width: 1280, height: 720 }
+      }
     }
 
     // Config for running tests in local

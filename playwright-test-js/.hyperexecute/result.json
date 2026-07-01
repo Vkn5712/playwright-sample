@@ -1,120 +1,292 @@
 {
-    "id": "1fa515ec-26ec-4fa9-b47c-438be787a400",
-    "created_at": "2026-07-01T07:44:42Z",
-    "update_at": "2026-07-01T07:47:28Z",
+    "id": "423d3502-3074-4693-9e00-05780bf12cfa",
+    "created_at": "2026-07-01T08:25:22Z",
+    "update_at": "2026-07-01T08:26:55Z",
     "global_timeout": 90,
     "tunnel_name": "",
-    "start_time": "2026-07-01T07:46:17Z",
-    "end_time": "2026-07-01T07:47:28Z",
+    "start_time": "2026-07-01T08:25:45Z",
+    "end_time": "2026-07-01T08:26:55Z",
     "summary": {
-        "total_time": 71000000000,
-        "execution_time": 71000000000,
-        "total_tasks": 1,
-        "build_time_consumed": 71000000000,
-        "jobTestExecutionTime": "10s",
+        "total_time": 70000000000,
+        "execution_time": 70000000000,
+        "total_tasks": 4,
+        "build_time_consumed": 259000000000,
+        "jobTestExecutionTime": "14s",
         "failed_tasks": 0,
         "total_stage_info": {
             "postrun": {
                 "StageFailedPercent": 0,
                 "StagePassPercent": 100,
-                "TotalStage": 1
+                "TotalStage": 4
             },
             "prerun": {
                 "StageFailedPercent": 0,
                 "StagePassPercent": 100,
-                "TotalStage": 1
+                "TotalStage": 4
             },
             "scenario": {
                 "StageFailedPercent": 0,
                 "StagePassPercent": 100,
-                "TotalStage": 2
+                "TotalStage": 3
             },
             "test_discovery": {
                 "StageFailedPercent": 0,
                 "StagePassPercent": 100,
-                "TotalStage": 1
+                "TotalStage": 4
             }
         },
         "status": "skipped",
-        "job_link": "https://hyperexecute.lambdatest.com/hyperexecute/task?jobId=1fa515ec-26ec-4fa9-b47c-438be787a400"
+        "job_link": "https://hyperexecute.lambdatest.com/hyperexecute/task?jobId=423d3502-3074-4693-9e00-05780bf12cfa"
     },
     "tasks": [
         {
-            "id": "HYPL-1298164-1782891900764653269EZI",
+            "id": "HYPL-1298164-1782894343934759595BDR",
             "os": "linux",
             "status": "skipped",
             "remark": "completed",
             "debug": false,
-            "created_at": "2026-07-01T07:45:00Z",
-            "update_at": "2026-07-01T07:47:28Z",
-            "start_time": "2026-07-01T07:46:17Z",
-            "end_time": "2026-07-01T07:47:28Z",
+            "created_at": "2026-07-01T08:25:44Z",
+            "update_at": "2026-07-01T08:26:48Z",
+            "start_time": "2026-07-01T08:25:45Z",
+            "end_time": "2026-07-01T08:26:48Z",
             "group_number": 1,
             "stages": [
                 {
-                    "id": "dfeece62-9b67-4633-8533-28f67958495f",
+                    "id": "cb5340ac-c086-41ae-884a-b586835de630",
                     "type": "prerun",
                     "status": "completed",
                     "name": "pre",
                     "iteration": 0,
                     "link": "pre.log",
-                    "created_at": "2026-07-01T07:46:19Z",
-                    "started_at": "2026-07-01T07:46:18Z",
-                    "updated_at": "2026-07-01T07:47:08Z",
+                    "created_at": "2026-07-01T08:25:46Z",
+                    "started_at": "2026-07-01T08:25:46Z",
+                    "updated_at": "2026-07-01T08:26:33Z",
                     "order": 1,
                     "task_number": 1
                 },
                 {
-                    "id": "0bae4a51-2293-46c3-b7a8-0fda56a2d49b",
+                    "id": "1767bb02-9bae-4a7b-afcc-f7775254918b",
                     "type": "test_discovery",
                     "status": "completed",
                     "name": "discovery",
                     "iteration": 0,
                     "link": "discovery.log",
-                    "created_at": "2026-07-01T07:47:09Z",
-                    "started_at": "2026-07-01T07:47:08Z",
-                    "updated_at": "2026-07-01T07:47:08Z",
+                    "created_at": "2026-07-01T08:26:33Z",
+                    "started_at": "2026-07-01T08:26:33Z",
+                    "updated_at": "2026-07-01T08:26:33Z",
                     "order": 2,
                     "task_number": 1
                 },
                 {
-                    "id": "ddbb5707-fbc6-4d99-9b7e-fb21a8934c2e",
+                    "id": "fb88578c-f741-41bc-887a-4a491218af1b",
                     "type": "scenario",
                     "status": "skipped",
                     "name": "tests/test_2.spec.js",
                     "iteration": 0,
                     "link": "command.1.0.log",
-                    "created_at": "2026-07-01T07:47:09Z",
-                    "started_at": "2026-07-01T07:47:18Z",
-                    "updated_at": "2026-07-01T07:47:24Z",
+                    "created_at": "2026-07-01T08:26:33Z",
+                    "started_at": "2026-07-01T08:26:41Z",
+                    "updated_at": "2026-07-01T08:26:48Z",
                     "order": 3,
                     "task_number": 1
                 },
                 {
-                    "id": "0e877360-4871-4a02-99b3-45395b604405",
-                    "type": "scenario",
-                    "status": "skipped",
-                    "name": "tests/test_1.spec.js",
-                    "iteration": 0,
-                    "link": "command.2.0.log",
-                    "created_at": "2026-07-01T07:47:09Z",
-                    "started_at": "2026-07-01T07:47:24Z",
-                    "updated_at": "2026-07-01T07:47:28Z",
-                    "order": 4,
-                    "task_number": 1
-                },
-                {
-                    "id": "b977a48c-1ff4-4ee8-aad8-23c3c5c023f3",
+                    "id": "02c3e64d-169d-4bcb-98a6-3dcd18b3e77b",
                     "type": "postrun",
                     "status": "completed",
                     "name": "post",
                     "iteration": 0,
                     "link": "post.log",
-                    "created_at": "2026-07-01T07:47:09Z",
-                    "started_at": "2026-07-01T07:47:28Z",
-                    "updated_at": "2026-07-01T07:47:28Z",
-                    "order": 5,
+                    "created_at": "2026-07-01T08:26:33Z",
+                    "started_at": "2026-07-01T08:26:48Z",
+                    "updated_at": "2026-07-01T08:26:48Z",
+                    "order": 4,
                     "task_number": 1
+                }
+            ]
+        },
+        {
+            "id": "HYPL-1298164-1782894343939446187LKK",
+            "os": "linux",
+            "status": "skipped",
+            "remark": "completed",
+            "debug": false,
+            "created_at": "2026-07-01T08:25:44Z",
+            "update_at": "2026-07-01T08:26:55Z",
+            "start_time": "2026-07-01T08:25:45Z",
+            "end_time": "2026-07-01T08:26:55Z",
+            "group_number": 2,
+            "stages": [
+                {
+                    "id": "501d53c9-4972-455f-9dc7-96f09143f5bc",
+                    "type": "prerun",
+                    "status": "completed",
+                    "name": "pre",
+                    "iteration": 0,
+                    "link": "pre.log",
+                    "created_at": "2026-07-01T08:25:47Z",
+                    "started_at": "2026-07-01T08:25:46Z",
+                    "updated_at": "2026-07-01T08:26:39Z",
+                    "order": 1,
+                    "task_number": 2
+                },
+                {
+                    "id": "4840cdbd-8fda-414b-8255-fb7513c5a605",
+                    "type": "test_discovery",
+                    "status": "completed",
+                    "name": "discovery",
+                    "iteration": 0,
+                    "link": "discovery.log",
+                    "created_at": "2026-07-01T08:26:39Z",
+                    "started_at": "2026-07-01T08:26:39Z",
+                    "updated_at": "2026-07-01T08:26:39Z",
+                    "order": 2,
+                    "task_number": 2
+                },
+                {
+                    "id": "19c64a42-0f18-4658-a1fe-324b4fed6392",
+                    "type": "scenario",
+                    "status": "skipped",
+                    "name": "tests/test_1.spec.js",
+                    "iteration": 0,
+                    "link": "command.1.0.log",
+                    "created_at": "2026-07-01T08:26:39Z",
+                    "started_at": "2026-07-01T08:26:47Z",
+                    "updated_at": "2026-07-01T08:26:55Z",
+                    "order": 3,
+                    "task_number": 2
+                },
+                {
+                    "id": "50fdf84a-b044-421e-975d-a011dc7dadfb",
+                    "type": "postrun",
+                    "status": "completed",
+                    "name": "post",
+                    "iteration": 0,
+                    "link": "post.log",
+                    "created_at": "2026-07-01T08:26:39Z",
+                    "started_at": "2026-07-01T08:26:55Z",
+                    "updated_at": "2026-07-01T08:26:55Z",
+                    "order": 4,
+                    "task_number": 2
+                }
+            ]
+        },
+        {
+            "id": "HYPL-1298164-1782894343943370429HSV",
+            "os": "linux",
+            "status": "skipped",
+            "remark": "completed",
+            "debug": false,
+            "created_at": "2026-07-01T08:25:44Z",
+            "update_at": "2026-07-01T08:26:44Z",
+            "start_time": "2026-07-01T08:25:45Z",
+            "end_time": "2026-07-01T08:26:44Z",
+            "group_number": 3,
+            "stages": [
+                {
+                    "id": "240ec215-10fe-4e81-9e54-4170bc1a9264",
+                    "type": "prerun",
+                    "status": "completed",
+                    "name": "pre",
+                    "iteration": 0,
+                    "link": "pre.log",
+                    "created_at": "2026-07-01T08:25:47Z",
+                    "started_at": "2026-07-01T08:25:46Z",
+                    "updated_at": "2026-07-01T08:26:33Z",
+                    "order": 1,
+                    "task_number": 3
+                },
+                {
+                    "id": "64ab782e-a06a-4cf0-915b-ef89d8b7871d",
+                    "type": "test_discovery",
+                    "status": "completed",
+                    "name": "discovery",
+                    "iteration": 0,
+                    "link": "discovery.log",
+                    "created_at": "2026-07-01T08:26:34Z",
+                    "started_at": "2026-07-01T08:26:33Z",
+                    "updated_at": "2026-07-01T08:26:33Z",
+                    "order": 2,
+                    "task_number": 3
+                },
+                {
+                    "id": "0d91360d-de02-428a-8bfb-c139e6450e0b",
+                    "type": "scenario",
+                    "status": "skipped",
+                    "name": "tests/multipleBrowserContexts.spec.js",
+                    "iteration": 0,
+                    "link": "command.1.0.log",
+                    "created_at": "2026-07-01T08:26:34Z",
+                    "started_at": "2026-07-01T08:26:41Z",
+                    "updated_at": "2026-07-01T08:26:43Z",
+                    "order": 3,
+                    "task_number": 3
+                },
+                {
+                    "id": "49c09dc2-b6ba-40d5-9131-18b2a5c0011e",
+                    "type": "postrun",
+                    "status": "completed",
+                    "name": "post",
+                    "iteration": 0,
+                    "link": "post.log",
+                    "created_at": "2026-07-01T08:26:34Z",
+                    "started_at": "2026-07-01T08:26:43Z",
+                    "updated_at": "2026-07-01T08:26:44Z",
+                    "order": 4,
+                    "task_number": 3
+                }
+            ]
+        },
+        {
+            "id": "HYPL-1298164-1782894343947265105MHH",
+            "os": "linux",
+            "status": "completed",
+            "remark": "completed",
+            "debug": false,
+            "created_at": "2026-07-01T08:25:44Z",
+            "update_at": "2026-07-01T08:26:52Z",
+            "start_time": "2026-07-01T08:25:45Z",
+            "end_time": "2026-07-01T08:26:52Z",
+            "group_number": 4,
+            "stages": [
+                {
+                    "id": "38d0106d-1003-4930-bc91-918f2349dd80",
+                    "type": "prerun",
+                    "status": "completed",
+                    "name": "pre",
+                    "iteration": 0,
+                    "link": "pre.log",
+                    "created_at": "2026-07-01T08:25:47Z",
+                    "started_at": "2026-07-01T08:25:46Z",
+                    "updated_at": "2026-07-01T08:26:43Z",
+                    "order": 1,
+                    "task_number": 4
+                },
+                {
+                    "id": "09252544-f328-4e07-9f34-db5137fccad6",
+                    "type": "test_discovery",
+                    "status": "completed",
+                    "name": "discovery",
+                    "iteration": 0,
+                    "link": "discovery.log",
+                    "created_at": "2026-07-01T08:26:43Z",
+                    "started_at": "2026-07-01T08:26:43Z",
+                    "updated_at": "2026-07-01T08:26:43Z",
+                    "order": 2,
+                    "task_number": 4
+                },
+                {
+                    "id": "bd52c1ca-5833-4eaf-aa76-1163cd36da0c",
+                    "type": "postrun",
+                    "status": "completed",
+                    "name": "post",
+                    "iteration": 0,
+                    "link": "post.log",
+                    "created_at": "2026-07-01T08:26:44Z",
+                    "started_at": "2026-07-01T08:26:52Z",
+                    "updated_at": "2026-07-01T08:26:52Z",
+                    "order": 3,
+                    "task_number": 4
                 }
             ]
         }

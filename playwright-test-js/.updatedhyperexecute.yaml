@@ -19,10 +19,10 @@ env:
     executeOn: local
 runson: linux
 autosplit: true
-concurrency: 1
+concurrency: 4
 testDiscovery:
     autosubset: true
-    command: find tests -name "test_*.spec.js" -type f
+    command: find tests -name "*.spec.js" -type f
     mode: dynamic
     type: raw
 testRunnerCommand: npm run testHE -- $test
@@ -30,7 +30,7 @@ tunnelOpts:
     testsPerTunnel: 10
 retryOnFailure: true
 maxRetries: 3
-jobID: 1fa515ec-26ec-4fa9-b47c-438be787a400
+jobID: 423d3502-3074-4693-9e00-05780bf12cfa
 codeDirectory: playwright-test-js
 framework:
     name: ""

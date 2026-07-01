@@ -6,7 +6,7 @@ key: LT_mu5SYdU4hWfecLZm7vn5zOWOV7WW720LcdOnV9Eknq3ctYj
 runson: linux
 
 autosplit: true
-concurrency: 1
+concurrency: 4
 
 pre:
   - rm -rf node_modules
@@ -22,7 +22,7 @@ env:
 testDiscovery:
   type: raw
   mode: dynamic
-  command: find tests -name "test_*.spec.js" -type f
+  command: find tests -name "*.spec.js" -type f
 
 testRunnerCommand: npm run testHE -- $test
 
