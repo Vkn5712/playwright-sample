@@ -30,7 +30,7 @@ tunnelOpts:
     testsPerTunnel: 10
 retryOnFailure: true
 maxRetries: 3
-jobID: 423d3502-3074-4693-9e00-05780bf12cfa
+jobID: 78ee713c-a264-4e8b-a827-539c5f70fb7a
 codeDirectory: playwright-test-js
 framework:
     name: ""

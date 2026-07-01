@@ -1,7 +1,7 @@
 const { test } = require('../lambdatest-setup')
 const { expect } = require('@playwright/test')
 
-test.describe.skip('Browse LambdaTest in different browser contexts', () => {
+test.describe('Browse LambdaTest in different browser contexts', () => {
   test('Search LambdaTest & LambdaTest Blog on DuckDuckGo', async ({ page }, testInfo) => {
     await page.goto('https://duckduckgo.com')
     let element = await page.locator("[name=\"q\"]");
